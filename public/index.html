@@ -231,17 +231,5 @@
               });
         }
       </script>
-  
-      <script>
-      try {
-      let app = firebase.app();
-      let apis = ["auth", "firestore", "storage"]
-        .filter(api => typeof app[api] === "function");
-      mensaje.value = `Firebase SDK cargó con: ${apis.join(', ')}`;
-       } catch (e) {
-      muestraError(e);
-      }
-       </script>
-    
   </body>
 </html>
